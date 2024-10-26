@@ -1,0 +1,115 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin: 0;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    height: 100%;
+    flex-wrap: nowrap;
+}
+
+nav {
+    align-self: stretch;
+    background-color: rgb(0, 0, 0);
+    padding: 1rem 2rem;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+    gap: 2rem;
+}
+
+nav ul li a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    padding: 8px;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid black;
+    color: blue;
+}
+
+#inputSection {
+    margin-top: 50px;
+    background-color: #F2BA0C;
+    padding: 30px;
+    border-radius: 10px;
+    width: 20%;
+    align-self: center;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    resize: none;
+    align-items: center;
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #4285f4;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #3367d6;
+}
+
+#outputSection {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 70%;
+    align-self: center;
+}
+
+.outputContainer {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Jarak bawah */
+    margin-left: 20px;   /* Jarak kiri */
+    margin-right: 20px;  /* Jarak kanan */
+    width: 40%;
+    align-items: center;
+}
+
+#displaymRNA, #displayAminoAcids {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 10px;
+    min-height: 100px;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    overflow-wrap: anywhere;
+    width: -webkit-fill-available;
+    align-items: center;
+}
