@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Genetic Transcription Simulator</title>
+</head>
+<body>
+    <div id="inputSection">
+        <textarea id="inputDNA" placeholder="Masukkan DNA Sense"></textarea>
+        <button onclick="transcribe()">Transkripsi</button>
+    </div>
+    <div id="outputSection">
+        <div class="outputContainer">
+            <p>mRNA</p>
+            <div id="displaymRNA"></div>
+        </div>
+        <div class="outputContainer">
+            <p>Amino Acids</p>
+            <div id="displayAminoAcids"></div>
+        </div>
+    </div>
+
+    <script src="Interface.js"></script>
+    
+</body>
+</html>
